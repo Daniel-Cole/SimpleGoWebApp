@@ -1,0 +1,36 @@
+{{define "base"}}
+<html>
+<head>
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/dashboard.css">
+
+    <!-- vendor bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- vendor js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+    <!-- custom js -->
+    <script src="/js/dashboard.js"></script>
+    <script src="/js/dndTree.js"></script>
+
+</head>
+<title>SCAVM</title>
+
+<body>
+
+    {{ template "menu" .}}
+    <div id="main">
+        <h1>SCAVM - App and Environment Manager!</h1>
+        <hr>
+    {{ template "application" .}}
+    {{ template "environment" .}}
+    </div>
+    <div id="tree-container"></div>
+
+
+</body>
+</html>
+{{end}}

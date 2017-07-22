@@ -1,0 +1,6 @@
+{
+  "port": 8080,
+  "dbname": "dev.db",
+  "dbbucket": "applications",
+  "dbtimeout": 10
+}

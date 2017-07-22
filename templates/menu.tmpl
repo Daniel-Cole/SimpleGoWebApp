@@ -1,0 +1,67 @@
+{{define "menu"}}
+<div id="menu-div" class="sidenav">
+    <div class="sidenav-x sidenav-closed" onclick="toggleNav(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+
+    </div>
+    <span id="menu-div-title">Controls</span>
+    <hr>
+    <div id="menu-items" class="col" style="display: none">
+
+        <div>
+            <div class="btn-group row" data-toggle="buttons">
+                <label id="search-app-btn" class="btn btn-success">
+                    <span>Apps</span>
+                </label>
+                <label id="search-env-btn" class="btn btn-default">
+                    <span>Envs</span>
+                </label>
+            </div>
+
+
+            <div class="btn-group row" data-toggle="buttons">
+                <label id="get-btn" class="btn btn-success">
+                    <span>Get</span>
+                </label>
+                <label id="add-btn" class="btn btn-default">
+                    <span>Add</span>
+                </label>
+                <label id="del-btn" class="btn btn-default">
+                    <span>Del</span>
+                </label>
+                <label id="get-all-btn" class="btn btn-default">
+                    <span>Get All</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="control-actions control-actions-app" class="row">
+            <label class="menu-label">Application: </label>
+            <input id="app-input" type="text" placeholder="i.e. tcedxis">
+            <label class="menu-label">AND/OR</label>
+            <label class="menu-label">Environment: </label>
+            <input id="env-input-1" type="text" placeholder="i.e. env92">
+        </div>
+
+        <div class="control-actions control-actions-env" style="display: none" class="row">
+            <label class="menu-label">Owner: </label>
+            <input id="owner-input" type="text" placeholder="i.e. becks">
+            <label class="menu-label">AND/OR</label>
+            <label class="menu-label">Environment: </label>
+            <input id="env-input-2" type="text" placeholder="i.e. env92">
+        </div>
+
+        <div id="submit-btn">
+            <button class="btn btn-default">Submit</button>
+        </div>
+
+        <div id="info">
+
+        </div>
+
+    </div>
+
+</div>
+{{end}}

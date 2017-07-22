@@ -1,0 +1,5 @@
+applications-tomcat.yaml
+applications-springboot.yaml
+*.db
+*.db.lock
+.idea
