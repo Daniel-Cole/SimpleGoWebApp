@@ -264,7 +264,6 @@ function convertAppDataToTree() {
                     //environment key already exists
                     exists = true;
                     flareJSON.children[j].children.push(secondaryChild);
-                    exists = true;
                     break;
                 }
             }
